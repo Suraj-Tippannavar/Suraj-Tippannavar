@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="800" height="540">
+<defs>
+  <clipPath id="sc1"><rect x="0" y="372" width="800" height="30"/></clipPath>
+  <clipPath id="sc2"><rect x="0" y="408" width="800" height="30"/></clipPath>
+  <clipPath id="mc"><rect x="0" y="498" width="800" height="30"/></clipPath>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#07101f"/>
+    <stop offset="100%" stop-color="#050810"/>
+  </linearGradient>
+  <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#00e5ff" stop-opacity="0.06"/>
+    <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+
+<!-- Background -->
+<rect width="800" height="540" fill="#050810"/>
+<rect width="800" height="360" fill="url(#bg)"/>
+
+<!-- Scan light -->
+<rect x="-80" y="0" width="80" height="360" fill="url(#scan)">
+  <animateTransform attributeName="transform" type="translate" from="-80 0" to="880 0" dur="4s" repeatCount="indefinite"/>
+</rect>
+
+<!-- NAME -->
+<text x="400" y="65" font-size="42" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="4" font-family="'Segoe UI',Arial,sans-serif" opacity="0">
+  SURAJ TIPPANNAVAR
+  <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.2s" fill="freeze"/>
+</text>
+
+<!-- Subtitle -->
+<text x="400" y="98" font-size="12" fill="#00e5ff" text-anchor="middle" letter-spacing="3" font-family="'Courier New',monospace" opacity="0">
+  SOFTWARE DEVELOPER · BUILDER · OPEN SOURCE
+  <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" fill="freeze"/>
+</text>
+
+<!-- Quotes fade in/out - all start opacity 0 -->
+<text x="400" y="338" font-size="14" fill="#94a3b8" text-anchor="middle" font-family="'Courier New',monospace" opacity="0">
+  Building things that matter.
+  <animate attributeName="opacity" values="0;1;1;0;0;0;0;0;0;0;0" keyTimes="0;0.04;0.18;0.22;0.3;0.5;0.6;0.7;0.8;0.9;1" dur="25s" repeatCount="indefinite"/>
+</text>
+<text x="400" y="338" font-size="14" fill="#94a3b8" text-anchor="middle" font-family="'Courier New',monospace" opacity="0">
+  Turning ideas into deployable code.
+  <animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0;0;0" keyTimes="0;0.18;0.22;0.26;0.38;0.42;0.5;0.6;0.7;0.9;1" dur="25s" repeatCount="indefinite"/>
+</text>
+<text x="400" y="338" font-size="14" fill="#94a3b8" text-anchor="middle" font-family="'Courier New',monospace" opacity="0">
+  AI · Backend · Automation.
+  <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0;0;0" keyTimes="0;0.2;0.38;0.42;0.44;0.48;0.58;0.62;0.7;0.9;1" dur="25s" repeatCount="indefinite"/>
+</text>
+<text x="400" y="338" font-size="14" fill="#94a3b8" text-anchor="middle" font-family="'Courier New',monospace" opacity="0">
+  Shipping real-world software.
+  <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0;0" keyTimes="0;0.2;0.4;0.6;0.62;0.64;0.66;0.70;0.80;0.84;1" dur="25s" repeatCount="indefinite"/>
+</text>
+<text x="400" y="338" font-size="14" fill="#94a3b8" text-anchor="middle" font-family="'Courier New',monospace" opacity="0">
+  Code. Build. Deploy. Repeat.
+  <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.2;0.4;0.6;0.7;0.8;0.82;0.84;0.86;0.88;0.97;1" dur="25s" repeatCount="indefinite"/>
+</text>
+
+<!-- Outer orbit ring -->
+<circle cx="400" cy="210" r="72" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4">
+  <animateTransform attributeName="transform" type="rotate" from="0 400 210" to="360 400 210" dur="8s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Inner orbit ring -->
+<circle cx="400" cy="210" r="56" fill="none" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4 6" opacity="0.3">
+  <animateTransform attributeName="transform" type="rotate" from="0 400 210" to="-360 400 210" dur="5s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Orbit dot cyan -->
+<circle cx="400" cy="138" r="5" fill="#00e5ff">
+  <animateTransform attributeName="transform" type="rotate" from="0 400 210" to="360 400 210" dur="3s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Orbit dot purple -->
+<circle cx="400" cy="138" r="5" fill="#7c3aed">
+  <animateTransform attributeName="transform" type="rotate" from="120 400 210" to="480 400 210" dur="3s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Orbit dot amber -->
+<circle cx="400" cy="138" r="5" fill="#f59e0b">
+  <animateTransform attributeName="transform" type="rotate" from="240 400 210" to="600 400 210" dur="3s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Hex core -->
+<rect x="368" y="178" width="64" height="64" rx="10" fill="#07101f" transform="rotate(45 400 210)"/>
+<rect x="368" y="178" width="64" height="64" rx="10" fill="none" stroke="#00e5ff" stroke-width="1.5" transform="rotate(45 400 210)">
+  <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect x="368" y="178" width="64" height="64" rx="10" fill="#00e5ff" transform="rotate(45 400 210)" opacity="0">
+  <animate attributeName="opacity" values="0;0.06;0" dur="3s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Building blocks col 1 -->
+<rect x="377" y="220" width="10" height="7" rx="2" fill="#07101f" stroke="#00e5ff" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0s" repeatCount="indefinite"/>
+</rect>
+<rect x="377" y="210" width="10" height="7" rx="2" fill="#07101f" stroke="#f59e0b" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+</rect>
+<rect x="377" y="200" width="10" height="7" rx="2" fill="#07101f" stroke="#a78bfa" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Building blocks col 2 -->
+<rect x="391" y="220" width="10" height="7" rx="2" fill="#07101f" stroke="#34d399" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" begin="0.2s" repeatCount="indefinite"/>
+</rect>
+<rect x="391" y="210" width="10" height="7" rx="2" fill="#07101f" stroke="#00e5ff" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
+</rect>
+<rect x="391" y="200" width="10" height="7" rx="2" fill="#07101f" stroke="#fbbf24" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" begin="0.8s" repeatCount="indefinite"/>
+</rect>
+<rect x="391" y="190" width="10" height="7" rx="2" fill="#07101f" stroke="#a78bfa" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" begin="1.1s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Building blocks col 3 -->
+<rect x="405" y="220" width="10" height="7" rx="2" fill="#07101f" stroke="#f59e0b" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" begin="0.4s" repeatCount="indefinite"/>
+</rect>
+<rect x="405" y="210" width="10" height="7" rx="2" fill="#07101f" stroke="#34d399" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" begin="0.7s" repeatCount="indefinite"/>
+</rect>
+<rect x="405" y="200" width="10" height="7" rx="2" fill="#07101f" stroke="#00e5ff" stroke-width="0.8">
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" begin="1.0s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Divider -->
+<rect x="0" y="362" width="800" height="1" fill="#0e1a2e"/>
+
+<!-- Skills row 1 drift left -->
+<g clip-path="url(#sc1)">
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-630 0" dur="18s" repeatCount="indefinite"/>
+    <g transform="translate(10,372)"><rect width="52" height="22" rx="11" fill="#07101f" stroke="#f59e0b" stroke-width="1" opacity="0.8"/><text x="26" y="15" font-size="11" fill="#fbbf24" text-anchor="middle" font-family="Arial,sans-serif">Java</text></g>
+    <g transform="translate(72,372)"><rect width="92" height="22" rx="11" fill="#07101f" stroke="#00e5ff" stroke-width="1" opacity="0.8"/><text x="46" y="15" font-size="11" fill="#00e5ff" text-anchor="middle" font-family="Arial,sans-serif">Spring Boot</text></g>
+    <g transform="translate(174,372)"><rect width="62" height="22" rx="11" fill="#07101f" stroke="#a78bfa" stroke-width="1" opacity="0.8"/><text x="31" y="15" font-size="11" fill="#a78bfa" text-anchor="middle" font-family="Arial,sans-serif">MySQL</text></g>
+    <g transform="translate(246,372)"><rect width="82" height="22" rx="11" fill="#07101f" stroke="#34d399" stroke-width="1" opacity="0.8"/><text x="41" y="15" font-size="11" fill="#34d399" text-anchor="middle" font-family="Arial,sans-serif">REST APIs</text></g>
+    <g transform="translate(338,372)"><rect width="64" height="22" rx="11" fill="#07101f" stroke="#00e5ff" stroke-width="1" opacity="0.8"/><text x="32" y="15" font-size="11" fill="#00e5ff" text-anchor="middle" font-family="Arial,sans-serif">Docker</text></g>
+    <g transform="translate(412,372)"><rect width="42" height="22" rx="11" fill="#07101f" stroke="#f59e0b" stroke-width="1" opacity="0.8"/><text x="21" y="15" font-size="11" fill="#fbbf24" text-anchor="middle" font-family="Arial,sans-serif">Git</text></g>
+    <g transform="translate(464,372)"><rect width="62" height="22" rx="11" fill="#07101f" stroke="#a78bfa" stroke-width="1" opacity="0.8"/><text x="31" y="15" font-size="11" fill="#a78bfa" text-anchor="middle" font-family="Arial,sans-serif">Maven</text></g>
+    <g transform="translate(536,372)"><rect width="84" height="22" rx="11" fill="#07101f" stroke="#34d399" stroke-width="1" opacity="0.8"/><text x="42" y="15" font-size="11" fill="#34d399" text-anchor="middle" font-family="Arial,sans-serif">AngularJS</text></g>
+    <g transform="translate(630,372)"><rect width="52" height="22" rx="11" fill="#07101f" stroke="#f59e0b" stroke-width="1" opacity="0.8"/><text x="26" y="15" font-size="11" fill="#fbbf24" text-anchor="middle" font-family="Arial,sans-serif">Java</text></g>
+    <g transform="translate(692,372)"><rect width="92" height="22" rx="11" fill="#07101f" stroke="#00e5ff" stroke-width="1" opacity="0.8"/><text x="46" y="15" font-size="11" fill="#00e5ff" text-anchor="middle" font-family="Arial,sans-serif">Spring Boot</text></g>
+    <g transform="translate(794,372)"><rect width="62" height="22" rx="11" fill="#07101f" stroke="#a78bfa" stroke-width="1" opacity="0.8"/><text x="31" y="15" font-size="11" fill="#a78bfa" text-anchor="middle" font-family="Arial,sans-serif">MySQL</text></g>
+    <g transform="translate(866,372)"><rect width="82" height="22" rx="11" fill="#07101f" stroke="#34d399" stroke-width="1" opacity="0.8"/><text x="41" y="15" font-size="11" fill="#34d399" text-anchor="middle" font-family="Arial,sans-serif">REST APIs</text></g>
+    <g transform="translate(958,372)"><rect width="64" height="22" rx="11" fill="#07101f" stroke="#00e5ff" stroke-width="1" opacity="0.8"/><text x="32" y="15" font-size="11" fill="#00e5ff" text-anchor="middle" font-family="Arial,sans-serif">Docker</text></g>
+    <g transform="translate(1032,372)"><rect width="42" height="22" rx="11" fill="#07101f" stroke="#f59e0b" stroke-width="1" opacity="0.8"/><text x="21" y="15" font-size="11" fill="#fbbf24" text-anchor="middle" font-family="Arial,sans-serif">Git</text></g>
+    <g transform="translate(1084,372)"><rect width="62" height="22" rx="11" fill="#07101f" stroke="#a78bfa" stroke-width="1" opacity="0.8"/><text x="31" y="15" font-size="11" fill="#a78bfa" text-anchor="middle" font-family="Arial,sans-serif">Maven</text></g>
+    <g transform="translate(1156,372)"><rect width="84" height="22" rx="11" fill="#07101f" stroke="#34d399" stroke-width="1" opacity="0.8"/><text x="42" y="15" font-size="11" fill="#34d399" text-anchor="middle" font-family="Arial,sans-serif">AngularJS</text></g>
+  </g>
+</g>
+
+<!-- Skills row 2 drift right -->
+<g clip-path="url(#sc2)">
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="-560 0" to="0 0" dur="18s" repeatCount="indefinite"/>
+    <g transform="translate(10,408)"><rect width="92" height="22" rx="11" fill="#07101f" stroke="#a78bfa" stroke-width="1" opacity="0.8"/><text x="46" y="15" font-size="11" fill="#a78bfa" text-anchor="middle" font-family="Arial,sans-serif">Gemini API</text></g>
+    <g transform="translate(112,408)"><rect width="44" height="22" rx="11" fill="#07101f" stroke="#f59e0b" stroke-width="1" opacity="0.8"/><text x="22" y="15" font-size="11" fill="#fbbf24" text-anchor="middle" font-family="Arial,sans-serif">n8n</text></g>
+    <g transform="translate(166,408)"><rect width="62" height="22" rx="11" fill="#07101f" stroke="#00e5ff" stroke-width="1" opacity="0.8"/><text x="31" y="15" font-size="11" fill="#00e5ff" text-anchor="middle" font-family="Arial,sans-serif">Gen AI</text></g>
+    <g transform="translate(238,408)"><rect width="70" height="22" rx="11" fill="#07101f" stroke="#34d399" stroke-width="1" opacity="0.8"/><text x="35" y="15" font-size="11" fill="#34d399" text-anchor="middle" font-family="Arial,sans-serif">Android</text></g>
+    <g transform="translate(318,408)"><rect width="74" height="22" rx="11" fill="#07101f" stroke="#f59e0b" stroke-width="1" opacity="0.8"/><text x="37" y="15" font-size="11" fill="#fbbf24" text-anchor="middle" font-family="Arial,sans-serif">Power BI</text></g>
+    <g transform="translate(402,408)"><rect width="52" height="22" rx="11" fill="#07101f" stroke="#a78bfa" stroke-width="1" opacity="0.8"/><text x="26" y="15" font-size="11" fill="#a78bfa" text-anchor="middle" font-family="Arial,sans-serif">OOPS</text></g>
+    <g transform="translate(464,408)"><rect width="46" height="22" rx="11" fill="#07101f" stroke="#00e5ff" stroke-width="1" opacity="0.8"/><text x="23" y="15" font-size="11" fill="#00e5ff" text-anchor="middle" font-family="Arial,sans-serif">DSA</text></g>
+    <g transform="translate(520,408)"><rect width="42" height="22" rx="11" fill="#07101f" stroke="#34d399" stroke-width="1" opacity="0.8"/><text x="21" y="15" font-size="11" fill="#34d399" text-anchor="middle" font-family="Arial,sans-serif">SQL</text></g>
+    <g transform="translate(572,408)"><rect width="92" height="22" rx="11" fill="#07101f" stroke="#a78bfa" stroke-width="1" opacity="0.8"/><text x="46" y="15" font-size="11" fill="#a78bfa" text-anchor="middle" font-family="Arial,sans-serif">Gemini API</text></g>
+    <g transform="translate(674,408)"><rect width="44" height="22" rx="11" fill="#07101f" stroke="#f59e0b" stroke-width="1" opacity="0.8"/><text x="22" y="15" font-size="11" fill="#fbbf24" text-anchor="middle" font-family="Arial,sans-serif">n8n</text></g>
+    <g transform="translate(728,408)"><rect width="62" height="22" rx="11" fill="#07101f" stroke="#00e5ff" stroke-width="1" opacity="0.8"/><text x="31" y="15" font-size="11" fill="#00e5ff" text-anchor="middle" font-family="Arial,sans-serif">Gen AI</text></g>
+    <g transform="translate(800,408)"><rect width="70" height="22" rx="11" fill="#07101f" stroke="#34d399" stroke-width="1" opacity="0.8"/><text x="35" y="15" font-size="11" fill="#34d399" text-anchor="middle" font-family="Arial,sans-serif">Android</text></g>
+    <g transform="translate(880,408)"><rect width="74" height="22" rx="11" fill="#07101f" stroke="#f59e0b" stroke-width="1" opacity="0.8"/><text x="37" y="15" font-size="11" fill="#fbbf24" text-anchor="middle" font-family="Arial,sans-serif">Power BI</text></g>
+    <g transform="translate(964,408)"><rect width="52" height="22" rx="11" fill="#07101f" stroke="#a78bfa" stroke-width="1" opacity="0.8"/><text x="26" y="15" font-size="11" fill="#a78bfa" text-anchor="middle" font-family="Arial,sans-serif">OOPS</text></g>
+    <g transform="translate(1026,408)"><rect width="46" height="22" rx="11" fill="#07101f" stroke="#00e5ff" stroke-width="1" opacity="0.8"/><text x="23" y="15" font-size="11" fill="#00e5ff" text-anchor="middle" font-family="Arial,sans-serif">DSA</text></g>
+    <g transform="translate(1082,408)"><rect width="42" height="22" rx="11" fill="#07101f" stroke="#34d399" stroke-width="1" opacity="0.8"/><text x="21" y="15" font-size="11" fill="#34d399" text-anchor="middle" font-family="Arial,sans-serif">SQL</text></g>
+  </g>
+</g>
+
+<!-- Divider -->
+<rect x="0" y="442" width="800" height="1" fill="#0e1a2e"/>
+<rect x="0" y="443" width="800" height="52" fill="#07101f"/>
+
+<!-- Open to Opportunities -->
+<rect x="80" y="458" width="222" height="30" rx="15" fill="#052010" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.5"/>
+<circle cx="106" cy="473" r="5" fill="#10b981"/>
+<circle cx="106" cy="473" r="5" fill="#10b98160">
+  <animate attributeName="r" values="5;9;5" dur="2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="120" y="477" font-size="11" fill="#34d399" font-family="'Courier New',monospace" letter-spacing="0.5">Open to Opportunities</text>
+
+<rect x="328" y="453" width="1" height="32" fill="#0e1a2e"/>
+<rect x="346" y="458" width="96" height="30" rx="8" fill="#050810" stroke="#0e1a2e" stroke-width="1"/>
+<text x="394" y="477" font-size="11" fill="#64748b" text-anchor="middle" font-family="'Courier New',monospace">in  LinkedIn</text>
+<rect x="452" y="458" width="90" height="30" rx="8" fill="#050810" stroke="#0e1a2e" stroke-width="1"/>
+<text x="497" y="477" font-size="11" fill="#64748b" text-anchor="middle" font-family="'Courier New',monospace">  GitHub</text>
+
+<!-- Divider -->
+<rect x="0" y="496" width="800" height="1" fill="#0e1a2e"/>
+<rect x="0" y="497" width="800" height="36" fill="#07101f"/>
+
+<!-- Marquee -->
+<g clip-path="url(#mc)">
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-800 0" dur="20s" repeatCount="indefinite"/>
+    <text x="20" y="519" font-size="11" fill="#334155" font-family="'Courier New',monospace" letter-spacing="2">FINTRACK ↗</text>
+    <text x="148" y="519" font-size="11" fill="#1e3a5f" font-family="'Courier New',monospace">✦</text>
+    <text x="170" y="519" font-size="11" fill="#334155" font-family="'Courier New',monospace" letter-spacing="2">TELEGRAM AI AGENT ↗</text>
+    <text x="374" y="519" font-size="11" fill="#1e3a5f" font-family="'Courier New',monospace">✦</text>
+    <text x="396" y="519" font-size="11" fill="#334155" font-family="'Courier New',monospace" letter-spacing="2">N8N AUTOMATION ↗</text>
+    <text x="572" y="519" font-size="11" fill="#1e3a5f" font-family="'Courier New',monospace">✦</text>
+    <text x="594" y="519" font-size="11" fill="#334155" font-family="'Courier New',monospace" letter-spacing="2">ANDROID @ MINDMATRIX ↗</text>
+    <text x="820" y="519" font-size="11" fill="#334155" font-family="'Courier New',monospace" letter-spacing="2">FINTRACK ↗</text>
+    <text x="948" y="519" font-size="11" fill="#1e3a5f" font-family="'Courier New',monospace">✦</text>
+    <text x="970" y="519" font-size="11" fill="#334155" font-family="'Courier New',monospace" letter-spacing="2">TELEGRAM AI AGENT ↗</text>
+    <text x="1174" y="519" font-size="11" fill="#1e3a5f" font-family="'Courier New',monospace">✦</text>
+    <text x="1196" y="519" font-size="11" fill="#334155" font-family="'Courier New',monospace" letter-spacing="2">N8N AUTOMATION ↗</text>
+    <text x="1372" y="519" font-size="11" fill="#1e3a5f" font-family="'Courier New',monospace">✦</text>
+    <text x="1394" y="519" font-size="11" fill="#334155" font-family="'Courier New',monospace" letter-spacing="2">ANDROID @ MINDMATRIX ↗</text>
+  </g>
+</g>
+
+<rect x="0" y="533" width="800" height="1" fill="#0e1a2e"/>
+</svg>
