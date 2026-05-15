@@ -181,19 +181,12 @@
 <rect x="0" y="443" width="800" height="52" fill="#07101f"/>
 
 <!-- Open to Opportunities -->
-<a href="https://www.linkedin.com/in/suraj-tippannavar-687b74254/" target="_blank">
-  <rect x="346" y="458" width="96" height="30" rx="8" fill="#050810" stroke="#0e1a2e" stroke-width="1"/>
-  <text x="394" y="477" font-size="11" fill="#64748b" text-anchor="middle" font-family="'Courier New',monospace">in  LinkedIn</text>
-</a>
-
-<a href="https://github.com/Suraj-Tippannavar" target="_blank">
-  <rect x="452" y="458" width="90" height="30" rx="8" fill="#050810" stroke="#0e1a2e" stroke-width="1"/>
-  <text x="497" y="477" font-size="11" fill="#64748b" text-anchor="middle" font-family="'Courier New',monospace">  GitHub</text>
-</a>
-<!-- Divider -->
-<rect x="0" y="496" width="800" height="1" fill="#0e1a2e"/>
-<rect x="0" y="497" width="800" height="36" fill="#07101f"/>
-
+<rect x="280" y="458" width="240" height="30" rx="15" fill="transparent" stroke="#00e5ff" stroke-width="1"/>
+<circle cx="305" cy="473" r="4" fill="#00e5ff">
+  <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="320" y="477" font-size="11" fill="#e6edf3" font-family="'Courier New',monospace" letter-spacing="1">OPEN TO OPPORTUNITIES</text>
+  
 <!-- Marquee -->
 <g clip-path="url(#mc)">
   <g>
